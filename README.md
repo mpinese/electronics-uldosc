@@ -1,8 +1,14 @@
 # Ultra-low distortion sine wave oscillator
 
+## Status
+
 This design is complete, has been built, and works. Fab files can be found in `kicad\fab_v1.0.zip`, and the BOM with DigiKey part numbers in `bom.xlsx`.
 
-Licence: All content, *except* that in the directories `lib` and `uld_osc.pretty`, is made available for reuse under the [Creative Commons BY 4.0 Licence](https://creativecommons.org/licenses/by/4.0/). Content in the directories `lib` and `uld_osc.pretty` was sourced from the component manufacturers and retains its original licence.
+
+## Licence
+
+All content, *except* that in the directories `lib` and `uld_osc.pretty`, is made available for reuse under the [Creative Commons BY 4.0 Licence](https://creativecommons.org/licenses/by/4.0/). Content in the directories `lib` and `uld_osc.pretty` was sourced from the component manufacturers and retains its original licence.
+
 
 ## Description
 
@@ -25,6 +31,7 @@ This design is a close derivative and update of the [Vojtěch Janásek schematic
   2. Components (see `bom.xlsx` for part numbers). For all components in the BOM, expect to pay around 45 USD. Some of these components are optional (see below).
   3. A dual rail power source (see [Supply rails](#supply-rails) below).
 
+
 ### Optional components
 * Diodes D3 and D4 (Zeners) protect the input rails and can be ommitted if you are sure the rails will not exceed +/- 18 V (the supply limit of the TL081 op amps).
 * Capacitors C9 and C10 filter the input rails and can be ommitted, or downgraded in capacity, if you are sure the power supply is of high quality.
@@ -45,6 +52,7 @@ This is a mixed SMD/TH design, but not a challenging one to build: SMD component
 One thing to keep in mind is how the IC pins are labelled. Pin 1 is not labelled with a dot on the silkscreen, but rather with a bar. See the following figure for an explanation:
 ![Pin 1 explanatory figure](doc/pin1.jpg?raw=true "Identifying Pin 1")
 
+
 ### Testing and initial calibration
 
 1. Before powering up, verify there are no bridges between the supply rails. Ideally power up with a current-limited supply, max +/- 16 V, and verify 0 VDC on the output. Power down.
@@ -63,4 +71,4 @@ This circuit requires dual rails. It should work between +/- 9 V and +/- 16 V, a
 
 ### Usage
 
-After [calibration](#testing-and-initial-calibration), simply power up, wait a few seconds for the AGC to stabilise, then take the sine from the output. Load the output with at least 1k ohm at 1k Hz; if a lower impedance drive capability is needed then add a buffer. Use VR2 to adjust the output voltage.
+After [calibration](#testing-and-initial-calibration), simply power up, wait a few seconds for the AGC to stabilise, then take the sine from the output. Load the output with at least 1k ohm at 1k Hz; if a lower impedance drive capability is needed then add a buffer (see [modifications](#modifications)). Use VR2 to adjust the output voltage.
