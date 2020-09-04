@@ -44,7 +44,7 @@ This design is a close derivative and update of the [Vojtěch Janásek schematic
 This is a mixed SMD/TH design, but not a challenging one to build: SMD components are not smaller than 0603 size, and ICs are all SOIC. The board can be easily constructed with solder paste and tweezers via the [reflow skillet](https://hackaday.com/2013/07/28/electric-skillet-reflow-soldering-guide/) or toaster oven methods, or with patience and a fine tipped iron can be done by hand soldering.
 
 One thing to keep in mind is how the IC pins are labelled. Pin 1 is not labelled with a dot on the silkscreen, but rather with a bar. See the following figure for an explanation:
-![Pin 1 explanatory figure](docs/pin1.jpg?raw=true "Identifying Pin 1")
+![Pin 1 explanatory figure](doc/pin1.jpg?raw=true "Identifying Pin 1")
 
 ### Testing and initial calibration
 
