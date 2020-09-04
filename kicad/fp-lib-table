@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name uld_osc)(type KiCad)(uri ${KIPRJMOD}/uld_osc.pretty)(options "")(descr ""))
+)
