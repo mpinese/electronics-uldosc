@@ -1,9 +1,8 @@
 # Ultra-low distortion sine wave oscillator
 
-## Status
-
 This design is complete, has been built, and works. Fab files can be found in `kicad\fab_v1.0.zip`, and the BOM with DigiKey part numbers in `bom.xlsx`.
 
+Licence: All content, *except* that in the directories `lib` and `uld_osc.pretty`, is made available for reuse under the [Creative Commons BY 4.0 Licence](https://creativecommons.org/licenses/by/4.0/). Content in the directories `lib` and `uld_osc.pretty` was sourced from the component manufacturers and retains its original licence.
 
 ## Description
 
